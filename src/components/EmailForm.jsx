@@ -16,7 +16,7 @@ const EmailForm = () => {
         };
 
         try {
-            await axios.post('http://localhost:5000/api/email/send', emailData);
+            await axios.post('https://capstone-finalproject-emailbulktool-ptu7.onrender.com', emailData);
             alert('Emails sent successfully');
         } catch (error) {
             console.error('Error sending emails', error);
